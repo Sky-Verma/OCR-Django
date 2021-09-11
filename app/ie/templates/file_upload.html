@@ -1,17 +1,20 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload file</title>
-</head>
-<body>
+    <link rel="stylesheet" href="{%static 'css/file_upload.css'%}" />
+  </head>
+  <body>
     <form method="POST" enctype="multipart/form-data">
-    {%csrf_token%}
-{{form}}
-<button>Extract</button>
-</form>
-{{text}}
-</body>
+      {%csrf_token%} {{form}}
+      <button></button>
+    </form>
+    {{text}}
+
+    <script src="{%static 'js/file_upload.js'%}"></script>
+  </body>
 </html>

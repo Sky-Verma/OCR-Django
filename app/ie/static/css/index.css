@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 30vh;
+    color: white;
+    background: rgb(54, 147, 223);
+    text-align: center;
+    padding-top: 20px;
+}
+.header-text-1{
+    font-size: 10vh;
+}
+.header-text-2{
+    font-size: 5vh;
+}
+.body{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(54, 147, 223);
+    border: none;
+    transition-duration: .5s;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: 5vh;
+}
+button:hover{
+background: white;
+}
+button:hover a{
+    color: rgb(54, 147, 223);
+}
